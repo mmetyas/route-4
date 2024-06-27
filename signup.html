@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="signup.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center py-5 ">
+            <div class="col-lg-9 item shadow shadow-lg">
+                <h1 class="text-center text-light p-3">Smart Login System
+                </h1>
+                <div class="form-floating pb-3">
+                    <input oninput="validation(this)" required type="text" class="form-control" id="userName"
+                        placeholder="Password">
+                    <div class="alert alert-danger d-none " role="alert">
+                        Please Enter a Valid username!
+                    </div>
+                    <label for="userName">username</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input oninput="validation(this)" required type="email" class="form-control" id="mailInput"
+                        placeholder="name@example.com">
+                    <div class="alert alert-danger d-none" role="alert">
+                        Please Enter a Valid Email!
+                    </div>
+                    <label for="mailInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input oninput="validation(this)" required type="password" class="form-control" id="password"
+                        placeholder="Password">
+                    <div class="alert alert-danger d-none " role="alert">
+                        Please Enter a Valid Password!
+                    </div>
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="alert alert-danger d-none alertData" role="alert">
+                    this email has been exist 
+                </div>
+
+                <button class="btn w-100 mt-5 p-2">SignUp</button>
+
+
+
+                <h6 class="text-center py-3 text-light">Do you have account ! <span><a href="four.htm"
+                            class="text-decoration-none text-light">LogIn</a></span></h6>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="signup.js"></script>
+</body>
+
+</html>
